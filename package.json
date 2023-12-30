@@ -1,0 +1,19 @@
+{
+  "name": "tinnova_trello",
+  "version": "1.0.0",
+  "description": "Teste QA, Tinnova - Serasa",
+  "main": "index.js",
+  "scripts": {
+    "cypress:run": "cypress run",
+    "open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1"
+  }
+}

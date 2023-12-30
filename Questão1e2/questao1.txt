@@ -1,0 +1,31 @@
+1 – Validar limite de caracteres no campo (se houver) “Cliente destino”;
+
+2 – Validar a obrigatoriedade de preenchimento do campo “Cliente destino”;
+
+3 – Validar no campo “Valor” que o valor digitado não pode ser maior que o saldo da conta;
+
+4 – Validar no campo “Valor” o limite mínimo sendo maior que zero;
+
+5 – Validar no campo “Valor” a não permissão de inserção de letras e caracteres especiais;
+
+6 – Validar a obrigatoriedade de preenchimento do campo “Valor”;
+
+7 – Validar que a data preenchida no campo “Data de efetivação”, é maior que a data atual;
+
+8 – Validar que a data preenchida no campo “Data de efetivação”, é igual a data atual;
+
+9 – Validar que a data preenchida no campo “Data de efetivação”, não deverá ser menor que a data atual;
+
+10 - Validar no campo “Data de efetivação” a não permissão de inserção de letras e caracteres especiais;
+
+11 – Validar se no campo “Data de efetivação”, a ordem da data foi digitada corretamente (exemplo: dd/mm/aaaa);
+
+12 - Validar a obrigatoriedade de preenchimento do campo “Data de efetivação”;
+
+13 – Validar se ao clicarmos no botão “Transferir”, sem preencher nenhum dado, ele não prosseguirá com a ação;
+
+14 – Validar se ao clicarmos no botão “Transferir”, com todos os dados preenchidos, ele efetivará a transferência;
+
+15 – Validar se ao clicarmos no botão “Cancelar”, ele abortará a ação;
+
+16 – Validar se o “Cliente destino” é correntista do “Banco XYZ”;

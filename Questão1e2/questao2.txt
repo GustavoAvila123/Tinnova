@@ -1,0 +1,37 @@
+1
+SELECT A.nome AS nome_aluno
+FROM ALUNO A
+JOIN CURSA C ON A.coda = C.coda
+JOIN DISCIPLINA D ON C.codd = D.codd
+JOIN LECIONA L ON D.codd = L.codd
+JOIN PROFESSOR P ON L.codp = P.codp
+WHERE P.nome = 'João' AND D.nome = 'Cálculo';
+
+2
+SELECT D.nome AS nome_disciplina, COUNT(C.coda) AS quantidade_alunos
+FROM DISCIPLINA D
+JOIN CURSA C ON D.codd = C.codd
+GROUP BY D.codd, D.nome;
+
+3
+SELECT D.nome AS nome_disciplina
+FROM DISCIPLINA D
+WHERE NOT EXISTS (
+    SELECT P.codp
+    FROM PROFESSOR P
+    WHERE NOT EXISTS (
+        SELECT L.N
+        FROM LECIONA L
+        WHERE L.codd = D.codd AND L.codp = P.codp
+    )
+);
+
+4
+SELECT COUNT(*) AS total_professores
+FROM PROFESSOR;
+
+5
+SELECT DISTINCT A.nome AS nome_aluno
+FROM ALUNO A
+JOIN CURSA C ON A.coda = C.coda
+WHERE C.ano BETWEEN 2000 AND 2020;
